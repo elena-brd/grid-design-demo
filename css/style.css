@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff;
+    color: #181818;
+    line-height: 1.4;
+    margin: 2.5rem 3.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 1.5rem 0;
+}
+
+.btn {
+    background: #ff9f1c;
+    color: #181818;
+    padding: 0.7rem 1.2rem;
+    font-weight: 500;
+    transition: all 0.3s ease-in;
+}
+
+.btn:hover {
+    background: #ffbf69;
+}
+
+.wrapper {
+    display: grid;
+    gap: 1.5rem;
+}
+
+/* navigation */
+.main-menu ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.main-menu a {
+    display: block;
+    text-align: center;
+    background: #edfffd;
+    color: #181818;
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    box-shadow: 0px 1px 2px 1px rgba(46, 196, 182, 0.2);
+    transition: all 0.3s ease-in;
+}
+
+.main-menu a:hover {
+    background: #2ec4b6;
+    color: #fff;
+    box-shadow: 0px 1px 2px 1px rgba(46, 196, 182, 0.2);
+}
+
+/* showcase */
+.top-content {
+    display: grid;
+    grid-template-areas:
+        'showcase showcase top-card-one'
+        'showcase showcase top-card-two';
+    gap: 1rem;
+}
+
+.showcase {
+    grid-area: showcase;
+    min-height: 500px;
+    background: url('../img/showcase-1.jpg') center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.showcase h1 {
+    font-size: 1.8rem;
+}
+
+.showcase p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.top-box {
+    background: #edfffd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 1px 2px 1px rgba(46, 196, 182, 0.2);
+}
+
+.top-card-one {
+    grid-area: top-card-one;
+}
+
+.top-card-two {
+    grid-area: top-card-two;
+}
+
+/* boxes */
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.box {
+    background: #edfffd;
+    box-shadow: 0px 1px 2px 1px rgba(46, 196, 182, 0.2);
+    padding: 2rem;
+    text-align: center;
+}
+
+.box h3 {
+    padding: 0.5rem 1.5rem;
+}
+
+/* info */
+.info,
+.info-dev {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    background: #edfffd;
+    box-shadow: 0px 1px 2px 1px rgba(46, 196, 182, 0.2);
+    padding: 2rem;
+}
+
+.info div,
+.info-dev div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: start;
+}
+
+.info p,
+.info-dev p {
+    padding: 0.7rem 0;
+}
+
+/* portfolio */
+.portfolio img {
+    width: 200px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.portfolio img:hover {
+    transform: translateY(-5px);
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+/* footer */
+footer {
+    background: #ffbf69;
+    color: #181818;
+    text-align: center;
+    padding: 2rem 0;
+}
